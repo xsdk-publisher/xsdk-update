@@ -1,0 +1,19 @@
+使用前提:
+使用者本地必须能ping通华成控制器
+
+
+
+1.windows下直接使用GUI进行升级
+
+
+
+
+2.linux下为了轻便化，使用命令行进行升级  使用前提系统已经安装过sshpass(sudo apt install sshpass)
+
+./host-upgrader-linux-x86_64  -f  文件路径  -ip 华成控制器ip
+
+x86示例:
+./host-upgrader-linux-x86_64  -f  /mnt/hgfs/xsdk-host-1.9.80-main.aarch64.ES2A.1dbd648d-rk3576.tar.bfe -ip 192.168.6.4
+
+aarch64示例:
+./host-upgrader-linux-x86_64  -f  /mnt/hgfs/xsdk-host-1.9.80-main.aarch64.ES2A.1dbd648d-rk3576.tar.bfe -ip 192.168.6.4
